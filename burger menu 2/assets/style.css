@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+@media (max-width:600px) {
+
+    .menu__toggle{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 20;
+}
+
+
+    .body.no-scroll{
+            overflow: hidden;
+    }
+
+
+    .menu__liste{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: lightskyblue;
+        margin: 0;
+        z-index: 10;
+
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+}
+
+    .menu--open .menu__liste {
+        transform: translateX(0);
+    }
+}
