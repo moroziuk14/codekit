@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+.container{
+   width: 80%;
+   margin: 0 auto;
+}
+.section{
+   height: 600px;
+   margin: 50px 0;
+}
+.menu{
+   position: fixed;
+   left: 10px;
+   top: 10px;
+   
+}
+
+.menu__el--active a{
+   color: rgb(192, 83, 83);
+}
+
+
+
+
