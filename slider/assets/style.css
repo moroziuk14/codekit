@@ -1,0 +1,10 @@
+body{
+    font-family: sans-serif;
+}
+
+.slider__el {
+    display:none;
+}
+.slider__el--show {
+    display: block;
+}
