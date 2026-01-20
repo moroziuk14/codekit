@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+}
+
+@keyframes simpleFade {
+    from { 
+        opacity: 0; 
+    }
+    to { 
+        opacity: 1; 
+    }
+}
+
+.slider__el {
+    display: none;
+}
+
+.slider__el--show {
+    display: block;
+    animation: simpleFade 1s;
+}
