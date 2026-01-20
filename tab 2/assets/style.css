@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.tab {
+  padding: 0 10%;
+  margin-bottom: 50px;
+}
+
+.tab__nav {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tab__el a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  background: #dddddd00;
+  border-radius: 5px 5px 0 0;
+  transition: background 0.3s;
+}
+
+.tab__el--active a {
+  background-color: #acd0ff;
+  color: rgb(255, 106, 0);
+  font-weight: bold;
+}
+
+.tab__container {
+  width: 100%;
+  background:#acd0ff;
+  padding: 20px;
+  transition: height 0.3s ease-out;
+  overflow: hidden;
+  position: relative;
+}
+
+.tab--a .tab__content {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.tab--a .tab__content--active {
+  opacity: 1; 
+  pointer-events: all;
+  position: relative;
+}
+
+.tab--b .tab__content {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(-50px); 
+  transition: opacity 0.4s ease, transform 0.4s ease-out;
+  pointer-events: none;
+}
+
+.tab--b .tab__content--active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: all;
+  position: relative;
+}
